@@ -1,0 +1,17 @@
+body{
+    margin:auto;
+    background: rgb(139, 218, 139);
+}
+
+header
+{
+    background:maroon;
+    margin: 0 auto;
+}
+
+.logo
+{
+    color: #fff;
+    text-align: center;
+    font-size:40px
+}
