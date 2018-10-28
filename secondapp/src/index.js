@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Link} from 'react-router-dom';
 import App from './App';
 import Profile from './components/porfile';
 import Post from './components/post';
+import PostItem from './components/post_item'
 
 
 ReactDOM.render(
@@ -37,7 +38,8 @@ ReactDOM.render(
             </header>
             <Route exact path="/" component={App}></Route>
             <Route path="/home" component={App}></Route>
-            <Route path="/post" component={Post}></Route>
+            <Route exact path="/post" component={Post}></Route>
+            <Route path="/post/:id" component={PostItem}></Route>
             <Route path="/profile" component={Profile}></Route>
         </div>
     </BrowserRouter>, document.getElementById('root'));
